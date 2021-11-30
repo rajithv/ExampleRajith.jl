@@ -1,8 +1,2 @@
-using ExampleRajith
-using Test
-
-@testset "ExampleRajith.jl" begin
-    # 2x + 3y
-    @test my_f(2, 1) == 7
-    @test my_f(2, 3) == 13
-end
+using SafeTestsets
+@safetestset "my_f_tests" begin include("my_f_tests.jl") end
